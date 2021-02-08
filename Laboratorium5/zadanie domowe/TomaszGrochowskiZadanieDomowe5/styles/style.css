@@ -1,0 +1,115 @@
+﻿/*Importing fonts from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yusei+Magic&display=swap');
+
+/*style for header*/
+header {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 70px;
+    text-align: center;
+}
+
+/*style for body*/
+body {
+    width: 100%;
+    height: 100%;
+    background-color: lightslategray;
+}
+
+/*style for section*/
+section {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/*style for 'game-screen' id*/
+#game-screen {
+    position: relative;
+    float: left;
+    background-color: bisque;
+    width: 60%;
+    height: 80vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20%;
+}
+
+/*style for 'container' class*/
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+    background-color: black;
+    position: relative;
+    width: 75vh;
+    height: 75vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%;
+}
+
+/*style for 'item' class*/
+.item{
+    width: 150px;
+    height: 150px;
+}
+
+/*style for 'button' id with incremented indexes*/
+[id^="button"] {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+/*style for 'description' class*/
+.description {
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: darkmagenta;
+}
+
+/*style for 'target' id*/
+#target {
+    width: 60px;
+    height: 60px;
+
+    position: absolute;
+    top: 95%;
+    left: 97%;
+    margin: -30px 0 0 -30px;
+}
+
+/*style for 'game-screen' class*/
+.score-screen{
+    background-color:aliceblue;
+}
+
+/*style for 'start-button' id*/
+#start-button {
+    width: 350px;
+    height: 350px;
+
+    position:absolute;
+    top: 50%;
+    left:50%;
+
+    margin: -175px 0 0 -175px;
+}
+
+/*style for 'score' id*/
+#score {
+    display:inline-block;
+    font-family: 'Yusei Magic', sans-serif;
+    position: absolute;
+    left: 81%;
+    font-size: 26px;
+    text-align: right;
+}

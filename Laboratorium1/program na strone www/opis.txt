@@ -1,0 +1,36 @@
+The Settlement is a simple stratedy game in which you have to upgrade your village to the point in which it can defend itself from any incomming threat.
+
+
+At first the game greets a player with a title screen. The game starts whenever a "Start Game" button is pressed.
+
+
+Resources:
+- At the bottom is the resource bar indicating from left to right: 
+amount of owned food,
+amount of owned lumber, 
+amount of owned stone, 
+amount of owned iron, 
+amount of free villagers, 
+current maximum amount of free and working villagers, 
+amount of warriors
+
+Hunter's Huts provide 4 units of food every day. Every other resource facility provides 2 units of resource per day.
+
+Every villager and warrior eats one unit of food every day.
+
+Text box placed by a house image shows how many villagers can be currently in town. If there is a place for them, new villagers will arrive every 3 days. One house provides a shelter for 5 villagers.
+
+Buttons:
+"Build utilities" and "build militaries" buttons fills the list on the right with available buildings and info about needed resources to build them.
+
+"Recruit warrior" is used to recruit a new warrior, but only if barracks were built at first.
+
+List of incomming events will be filled with "Something will happen in X days" message every time a new event is initiated. Use "Do recon" button to change this message to a more specific information.
+When a event happens a player will be presented with two options of outcomes to choose from.
+
+A win condition is to have all military buildings upgraded to maximum and 20 warriors ready, so the settlement can defend itself from the barbaric horde which will attack after the 170th day.
+
+There are 2 lose conditions. The game is lost whenever the village runs out of food or when the requirements to defend against the horde are not fulfilled.
+
+
+

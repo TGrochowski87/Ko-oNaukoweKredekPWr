@@ -1,0 +1,6 @@
+This program consists of simple, yet interesting implementations of 3 different programming patterns:
+Observer - mainly used when changing between White Mode and Dark Mode
+Singleton - owl Singleton's class is a singleton
+Builder - used for building a cartoony car from parts.
+
+Application additionally utilizes progress bar in funny way. Don't worry, it works.

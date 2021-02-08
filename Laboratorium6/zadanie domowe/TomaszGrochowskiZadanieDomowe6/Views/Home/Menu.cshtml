@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    @*Greeting new user*@
+    <h3>
+        Greetings @ViewBag.User! What do you want to do?
+    </h3>
+
+    <div class="jumbotron-fluid">
+@*List of available program's functionalities*@
+        <ul>
+            <li>
+                @Html.ActionLink("Check currency value compared to PLN", "CurrencyChooser", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("List of saved currencies", "CurrencyList", "Home")
+            </li>
+        </ul>
+
+    </div>
+
+</div>

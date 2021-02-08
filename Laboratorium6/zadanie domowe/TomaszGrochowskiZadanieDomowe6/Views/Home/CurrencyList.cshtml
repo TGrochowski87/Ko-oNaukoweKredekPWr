@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "List";
+}
+
+@model List<CurrencyViewModel>
+
+@*Listing saved currencies*@
+@foreach (var c in Model)
+{
+    <h2>Currency: @c.Name</h2>
+    <h4>Value compared to PLN: @c.Value</h4>
+    <br />
+    <br />
+}
+
+@*Link to form for adding new currency*@
+<div>
+    @Html.ActionLink("Add currency", "AddCurrency", "Home")
+</div>

@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!--Site data-->
+<head>
+    <!--Site title-->
+    <title>
+        Trainer
+    </title>
+
+    <meta charset="utf-8">
+    <!--Importing Bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!--Linking with stylesheet-->
+    <link href="styles/style1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!--Site body section-->
+<body>
+
+<!--Sites header with a simple description-->
+    <div class="jumbotron text-center">
+        <h1>Train your skills with those simple trainers</h1>
+        <p>Made by Tomasz Grochowski</p>
+    </div>
+
+<!--Navbar allowing to choose one of training games-->
+    <nav class="navbar navbar-expand-md bg-dark">
+
+        <ul class="navbar-nav">
+<!--Moving to memory training game-->
+            <li class="nav-item">
+                <a class="nav-link" href="pages/page1.html">Memory training</a>
+            </li>
+<!--Moving to aim training game-->
+            <li class="nav-item">
+                <a class="nav-link" href="pages/page2.html">Aim training</a>
+            </li>
+        </ul>
+
+    </nav>
+
+<!--Container with player's high scores-->
+    <div class="container bg-secondary">
+        <div class="row justify-content-center">
+<!--High score for aim training-->
+            <div class="col-sm-4 col-md-3">
+                <h3>Aim training best score</h3>
+                <p id="score-aim"></p>
+            </div>
+<!--High score for memory training-->
+            <div class="col-sm-4 col-md-3">
+                <h3>Memory training best score</h3>
+                <p id="score-memory"></p>
+            </div>
+        </div>
+    </div>
+
+<!--Implementing scripts-->
+    <script src="scripts/script2.js"></script>
+    <script>ShowScores();</script>
+
+</body>
+</html>

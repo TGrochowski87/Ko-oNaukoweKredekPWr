@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Result";
+}
+
+<div>
+@*Showing calculation result*@
+    <h3>
+        Result: @TempData["Result"]
+    </h3>
+
+@*Link to get back to menu*@
+    <div class="jumbotron-fluid">
+        <a href="javascript:void(0);" onclick="history.go(-2);">Back to menu</a>
+    </div>
+
+</div>

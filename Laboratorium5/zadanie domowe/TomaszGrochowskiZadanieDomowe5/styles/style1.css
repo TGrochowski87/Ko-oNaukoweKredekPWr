@@ -1,0 +1,14 @@
+﻿/*style for body*/
+body {
+    background-color: lightgrey !important;
+}
+
+/*style for 'jumbotron' class*/
+.jumbotron {
+    background-color: lightslategrey !important;
+}
+
+/*style for p*/
+p {
+    font-size: 30px;
+}

@@ -1,0 +1,14 @@
+The Mauterian Forest Info App is mainly an info app for forest visitors.
+To log in as a visitor, click "Guest" button in Login window.
+In the guest view, user is presented with a set of buttons. Each of those fills the table with adequate info about the forest.
+
+There is also an admin view, which is shown after logging in with login and password of the admin account.
+Login: Boss
+Password: Boss
+
+Admin view should be available only to the boss of forest keepers. 
+In this view user sees only a list of employed keepers.
+There are also 3 buttons:
+"New keeper" shows new window with empty text boxes to fill with new keeper's data. Confirming will add new keeper to data base.
+"Edit keeper" shows new window with text boxes filled with chosen keeper's data. After editing click "Edit" to update keeper's data.
+"Remove keeper" removes chosen keeper from data base.

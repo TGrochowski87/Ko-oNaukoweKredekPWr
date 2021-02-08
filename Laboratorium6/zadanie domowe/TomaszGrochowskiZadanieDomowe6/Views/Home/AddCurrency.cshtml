@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "CurrencyForm";
+}
+
+@model CurrencyViewModel
+@*Form for adding new currency*@
+@using (Html.BeginForm("AddCurrency", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Please provide new currency's data.</h4>
+        <hr />
+        <!--Currency name-->
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+        <!--Value compared to PLN-->
+        <div class="form-group">
+            @Html.LabelFor(model => model.Value, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Value, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <!--Confirm button-->
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+
+}

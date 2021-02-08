@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Chooser";
+}
+
+@model List<string>
+
+@*Form for choosing data for calculation*@
+@using (Html.BeginForm("CalculationResult", "Home", FormMethod.Post))
+{
+    <h3>Choose currency from list and type in amount for calculation.</h3>
+@*Options to choose currency by name*@
+    <select id="updateTemplateSelect" name="currencyName">
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <option value="@Model[i]">@Model[i]</option>
+        }
+    </select>
+    <br />
+    <br />
+@*Input box for amount*@
+    <input id="Amount", name="Amount" type="number"/>
+@*Confirm button*@
+    <input id="updateTemplateSubmit" type="submit" value="Confirm"/>
+    <br />
+
+}

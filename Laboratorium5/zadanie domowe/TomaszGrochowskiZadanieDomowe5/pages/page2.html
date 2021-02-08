@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!--Site data-->
+<head>
+    <meta charset="utf-8" />
+    <!--Site title-->
+    <title>
+        Aim trainer
+    </title>
+<!--Linking with stylesheet-->
+    <link href="../styles/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<!--Site body section-->
+<body>
+<!--Sites header-->
+    <header>
+        Test your aim!
+    </header>
+
+<!--Section section-->
+    <section>
+
+<!--Short training description-->
+        <div class="description">
+            Press the start button to begin. Targets will vanish after a second.
+        </div>
+
+<!--Game screen on which targets will appear-->
+        <div id="game-screen">
+<!--Game starting button-->
+            <img id="start-button" src="../images/start-button.png" onclick="PreparationPhase();" />
+        </div>
+
+<!--Player's current score-->
+        <div id="score">
+            Your score: 00/20
+        </div>
+
+    </section>
+
+<!--Implementing scripts-->
+    <script src="../scripts/script.js"></script>
+
+</body>
+</html>

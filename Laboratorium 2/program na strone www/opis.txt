@@ -1,0 +1,42 @@
+Arena Simulator is a simple betting and arena fighting simulator.
+
+The goal is to earn money on betting and winning arena fights with player's own team. (Win condition is 2000 gold coins).
+The game is lost when the player goes bankrupt (0 gold coins).
+
+
+The game starts in the Arena View and the player can get back to this view by clicking the "Go to arena" button.
+Teams of gladiators are randomized whenever the player hits "New Arena" button. First arena fill is free, but every reroll costs 3 gold
+
+When the arena is filled, a player should place his bet (10 gold coins) and after that they can click "Fight!" button.
+If the team the player betted on wins, player gets 20 gold coins.
+
+
+There are 2 buttons in the fight window:
+"Start" button starts the fight.
+"Skip" button speeds up the fight.
+
+
+Every fighter has his own statistics. It's player's job to decide which team is stronger based on those.
+There is a counter mechanism attached to armor and attack types:
+Steel attack type deals 100% of damage to every armor type and steel armor gets 100% of damage from every attack type.
+Demonic attack type is the best versus soul, good versus ice, bad versus molten and the worst versus dark.
+Spiritual attack type is the best versus dark, good versus molten, bad versus ice and the worst versus soul.
+Fire attack type is the best versus ice, good versus soul, bad versus dark and the worst versus molten.
+Water attack type is the best versus molten, good versus dark, bad versus soul and the worst versus ice.
+
+Additionally melee fighters deal a bit more damage to other melee fighters and a bit less damage to range fighters.
+Range fighters deal a bit more damage to other range fighters and a bit less damage to melee fighters.
+
+Enemy front line will defend their back line, so melee fighters prioritize enemy melee fighters.
+
+
+If the player clicks the "Go to creator" button, they move to the Creator View, in which they can:
+Hire gladiators for their own team ("Hire" button") - costs 20 gold coins.
+Dismiss available gladiator from the list of fighters available to hire ("Dismiss" button) - costs 5 gold coins.
+Fire a gladiator from their team ("Fire" button).
+Edit owned gladiator's name ("Edit" button).
+
+There can be no more than 6 gladiators available to hire and 4 gladiators in player's team simultaneously.
+New gladiators will become available every time a betted fight takes place.
+
+Once the player has 4 gladiators in their team, they can go to arena with them. If the player's team wins, the player will get 200 gold coins.
